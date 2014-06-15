@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+
+    tools:context="com.streetfriends.app.Register">
+
+    <TextView
+        android:id="@+id/Instruction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="Inserisci i tuoi dati:"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/EdTextNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Instruction"
+        android:layout_marginBottom="10dp"
+        android:textSize="15dp"
+        android:textColor="@color/text_normal"
+        android:textColorHint="@color/text_hint"
+        android:hint="Nome"/>
+
+    <EditText
+        android:id="@+id/EdTextCognome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EdTextNome"
+        android:layout_marginBottom="10dp"
+        android:textSize="15dp"
+        android:textColor="@color/text_normal"
+        android:textColorHint="@color/text_hint"
+        android:hint="Cognome"/>
+
+    <EditText
+        android:id="@+id/EdTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EdTextCognome"
+        android:layout_marginBottom="10dp"
+        android:textSize="15dp"
+        android:textColor="@color/text_normal"
+        android:textColorHint="@color/text_hint"
+        android:hint="Email" />
+
+    <EditText
+        android:id="@+id/EdTextDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EdTextEmail"
+        android:layout_marginBottom="10dp"
+        android:textSize="15dp"
+        android:textColor="@color/text_normal"
+        android:textColorHint="@color/text_hint"
+        android:hint="Data di nascita GG/MM/AAAA"
+        android:password="true"/>
+
+    <EditText
+        android:id="@+id/EdTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EdTextDate"
+        android:layout_marginBottom="10dp"
+        android:textSize="15dp"
+        android:textColor="@color/text_normal"
+        android:textColorHint="@color/text_hint"
+        android:hint="Password"
+        android:password="true"/>
+
+    <Button
+        android:id="@+id/ButtonSubscribe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EdTextPassword"
+        android:layout_centerHorizontal="true"
+        android:text="Conferma"/>
+
+</RelativeLayout>

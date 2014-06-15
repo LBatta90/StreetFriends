@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">StreetFriends</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">Sing In</string>
+    <string name="title_activity_register">Register</string>
+    <string name="minimum_date">01/01/1920</string>
+
+</resources>

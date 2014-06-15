@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.streetfriends.app.Login"
+    >
+
+
+    <TextView
+        android:id="@+id/TextBenvenuto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="Benvenuto in"
+        android:textSize="25dp"
+        />
+    <TextView
+        android:id="@+id/TextBenvenuto2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/TextBenvenuto"
+        android:layout_marginBottom="20dp"
+        android:text="StreetFriends"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/text_title"/>
+    <TextView
+        android:id="@+id/TextToDo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/TextBenvenuto2"
+        android:layout_marginBottom="50dp"
+        android:textSize="20dp"
+        android:text="Accedi o registrati"/>
+
+    <EditText
+        android:id="@+id/editUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/TextToDo"
+        android:textSize="22dp"
+        android:textColor="@color/text_normal"
+        android:textColorHint="@color/text_hint"
+        android:hint="Username"
+        android:maxLines="1" />
+
+    <EditText
+        android:id="@+id/editPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/editUsername"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:textSize="22dp"
+        android:textColor="@color/text_normal"
+        android:textColorHint="@color/text_hint"
+        android:hint="Password"
+        android:maxLines="1"
+        />
+
+    <Button
+        android:id="@+id/ButtonLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Accedi"
+        android:onClick="Login.Singin_click"
+        android:layout_centerVertical="false"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/editPassword"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        />
+
+
+    <Button
+        android:id="@+id/ButtonRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registrati"
+        android:onClick="Login.Register_click"
+        android:layout_below="@+id/ButtonLogin"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>
