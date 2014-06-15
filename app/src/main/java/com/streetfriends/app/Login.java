@@ -42,7 +42,7 @@ public class Login extends Activity {
         /*Login button clicked, need to check ID & PSW before start MainActivity*/
         /*
         *
-        * ADD HERE LOGIN INSTRUCTION FUCKING BITCH
+        * ADD HERE LOGIN INSTRUCTION FUCKING BITCH please
         *
         * */
         /*Intent i=new Intent(Login.this, MainActivity.class);
