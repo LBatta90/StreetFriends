@@ -45,9 +45,9 @@ public class Login extends Activity {
         * ADD HERE LOGIN INSTRUCTION
         *
         * */
-        /*Intent i=new Intent(Login.this, MainActivity.class);
+        Intent i=new Intent(Login.this, MainActivity.class);
         startActivity(i);
-        finish();*/
+        finish();
     }
 
     private void Register_click(View v)
