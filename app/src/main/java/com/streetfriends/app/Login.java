@@ -15,19 +15,19 @@ public class Login extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         //Define Accedi Button onclick listener
-        final Button LogButton = (Button) findViewById(R.id.ButtonLogin);
-        final Button RegButton = (Button) findViewById(R.id.ButtonRegister);
-        final TextView Username = (TextView) findViewById(R.id.editUsername);
-        final TextView Password = (TextView) findViewById(R.id.editPassword);
+        final Button logButton = (Button) findViewById(R.id.ButtonLogin);
+        final Button regButton = (Button) findViewById(R.id.ButtonRegister);
+        final TextView username = (TextView) findViewById(R.id.editUsername);
+        final TextView password = (TextView) findViewById(R.id.editPassword);
 
-        LogButton.setOnClickListener(new View.OnClickListener() {
+        logButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Singin_click(view, Username.toString(),Password.toString());
+                Singin_click(view, username.toString(), password.toString());
             }
         });
 
-        RegButton.setOnClickListener(new View.OnClickListener() {
+        regButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Register_click(view);
@@ -58,5 +58,7 @@ public class Login extends Activity {
         startActivity(i);
         finish();
     }
+
+
 
 }

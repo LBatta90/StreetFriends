@@ -7,6 +7,6 @@
     android:dividerHeight="0dp"
     android:background="#cccc"
     tools:context="com.streetfriends.app.NavigationDrawerFragment"
-    android:id="@+id/" />
+    android:id="@+id/pippo" />
 
 

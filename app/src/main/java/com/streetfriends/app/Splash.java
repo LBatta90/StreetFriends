@@ -9,7 +9,7 @@ import android.content.Intent;
 public class Splash extends Activity {
 
     // Splash screen timer
-    private static int SPLASH_TIME_OUT = 3000;
+    private static final int SPLASH_TIME_OUT = 3000;
 
 
     @Override
