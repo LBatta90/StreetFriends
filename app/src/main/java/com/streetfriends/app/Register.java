@@ -31,11 +31,11 @@ public class Register extends Activity {
         /*
         * The text wrote by user is reachable by function .getText() Example -> Nome.getText()
         */
-        EditText Nome= (EditText) findViewById(R.id.EdTextNome);
-        EditText Cognome= (EditText) findViewById(R.id.EdTextCognome);
-        EditText Email= (EditText) findViewById(R.id.EdTextEmail);
-        EditText Data_nascita = (EditText) findViewById(R.id.EdTextDate);
-        EditText Psw= (EditText) findViewById(R.id.EdTextPassword);
+        EditText nome= (EditText) findViewById(R.id.EdTextNome);
+        EditText cognome= (EditText) findViewById(R.id.EdTextCognome);
+        EditText email= (EditText) findViewById(R.id.EdTextEmail);
+        EditText data_nascita = (EditText) findViewById(R.id.EdTextDate);
+        EditText psw= (EditText) findViewById(R.id.EdTextPassword);
         /*
         * INSERT HERE THE COMMUNICATION FUNCTION
         * */
