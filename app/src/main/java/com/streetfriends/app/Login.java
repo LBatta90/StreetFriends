@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.widget.Button;
 import android.widget.TextView;
 import android.view.View;
-
+import android.graphics.Typeface
 
 public class Login extends Activity {
 
@@ -14,11 +14,19 @@ public class Login extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        //Define Accedi Button onclick listener
+        //Define Accedi Button onclick listener pippo
         final Button logButton = (Button) findViewById(R.id.ButtonLogin);
         final Button regButton = (Button) findViewById(R.id.ButtonRegister);
         final TextView username = (TextView) findViewById(R.id.editUsername);
         final TextView password = (TextView) findViewById(R.id.editPassword);
+
+
+
+        Typeface tf = Typeface.createFromAsset(getAssets(),
+                "fonts/NeoSans.TTF");
+        TextView tv = (TextView) findViewById(R.id.TextBenvenuto2);
+        tv.setTypeface(tf);
+        username.setTypeface(tf);
 
         logButton.setOnClickListener(new View.OnClickListener() {
             @Override
