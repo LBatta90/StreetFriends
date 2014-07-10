@@ -26,13 +26,14 @@
         android:layout_alignParentStart="false"
         android:contentDescription="sf" />
 
-    <ImageView
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="Street Friends"
         android:id="@+id/title_splash"
-        android:src="@drawable/title_splash"
+        android:layout_marginTop="52dp"
+        android:textSize="40dp"
         android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_marginTop="50dp" />
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

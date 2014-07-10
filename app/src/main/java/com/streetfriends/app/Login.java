@@ -7,12 +7,16 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.view.View;
 import android.graphics.Typeface;
+import android.view.Window;
 
 public class Login extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        // Remove the Title Bar
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+
         setContentView(R.layout.activity_login);
         //Define Accedi Button onclick listener pippo
         final Button logButton = (Button) findViewById(R.id.ButtonLogin);
@@ -22,11 +26,22 @@ public class Login extends Activity {
 
 
 
-        Typeface tf = Typeface.createFromAsset(getAssets(),
+        Typeface Neo = Typeface.createFromAsset(getAssets(),
                 "fonts/NeoSans.TTF");
-        TextView tv = (TextView) findViewById(R.id.TextBenvenuto2);
-        tv.setTypeface(tf);
-        username.setTypeface(tf);
+        TextView tv0 = (TextView) findViewById(R.id.TextBenvenuto2);
+        tv0.setTypeface(Neo);
+        //username.setTypeface(Neo);
+
+        Typeface ColL = Typeface.createFromAsset(getAssets(),
+                "fonts/ColabLig.otf");
+        TextView tv1 = (TextView) findViewById(R.id.ButtonLogin);
+        TextView tv2 = (TextView) findViewById(R.id.ButtonRegister);
+        TextView tv3 = (TextView) findViewById(R.id.TextToDo);
+        TextView tv4 = (TextView) findViewById(R.id.TextBenvenuto);
+        tv1.setTypeface(ColL);
+        tv2.setTypeface(ColL);
+        tv3.setTypeface(ColL);
+        tv4.setTypeface(ColL);
 
         logButton.setOnClickListener(new View.OnClickListener() {
             @Override

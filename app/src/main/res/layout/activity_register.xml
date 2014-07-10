@@ -59,8 +59,7 @@
         android:textSize="15dp"
         android:textColor="@color/text_normal"
         android:textColorHint="@color/text_hint"
-        android:hint="Data di nascita GG/MM/AAAA"
-        android:password="true"/>
+        android:hint="Data di nascita GG/MM/AAAA"/>
 
     <EditText
         android:id="@+id/EdTextPassword"

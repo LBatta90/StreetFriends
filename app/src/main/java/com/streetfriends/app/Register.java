@@ -1,10 +1,13 @@
 package com.streetfriends.app;
 
 import android.app.Activity;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 
 public class Register extends Activity {
@@ -12,8 +15,18 @@ public class Register extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        // Remove the Title Bar
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+
         setContentView(R.layout.activity_register);
         final Button ConfirmButton = (Button) findViewById(R.id.ButtonSubscribe);
+
+        Typeface ColL = Typeface.createFromAsset(getAssets(),
+                "fonts/ColabLig.otf");
+        TextView tv1 = (TextView) findViewById(R.id.Instruction);
+        TextView tv2 = (TextView) findViewById(R.id.ButtonSubscribe);
+        tv1.setTypeface(ColL);
+        tv2.setTypeface(ColL);
 
         ConfirmButton.setOnClickListener(new View.OnClickListener(){
             @Override
